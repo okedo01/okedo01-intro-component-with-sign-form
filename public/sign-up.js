@@ -1,7 +1,9 @@
-let iconError1 = document.querySelector(".icon-1");
-let iconError2 = document.querySelector(".icon-2");
-let iconError3 = document.querySelector(".icon-3");
-let iconError4 = document.querySelector(".icon-4");
+// let iconError1 = document.querySelector(".icon-1");
+// let iconError2 = document.querySelector(".icon-2");
+// let iconError3 = document.querySelector(".icon-3");
+// let iconError4 = document.querySelector(".icon-4");
+
+const iconError = document.querySelector('.icon-error');
 
 const signUpForm = document.querySelector('form');
 signUpForm.addEventListener("submit", event => {
@@ -37,10 +39,10 @@ const validateFirstName = () => {
 
     firstName.addEventListener("input", () => {
         errorFirstName.textContent = "";
-        iconError1.style.display = "none";
-        iconError2.style.top = "16.7em";
-        iconError3.style.top = "22.6em";
-        iconError4.style.top = "28.3em";
+        // iconError1.style.display = "none";
+        // iconError2.style.top = "16.7em";
+        // iconError3.style.top = "22.6em";
+        // iconError4.style.top = "28.3em";
         errorBorderFirstName.style.borderColor = "";
     })
     if(firstName.value.trim() === ""){
@@ -49,7 +51,7 @@ const validateFirstName = () => {
         errorBorderFirstName.style.borderColor = "hsl(0, 100%, 74%)";
     }else{
         errorFirstName.textContent = ""; 
-        iconError1.style.display = "none";
+        // iconError1.style.display = "none";
     }
 }
 
@@ -60,18 +62,18 @@ const validateLastName = () => {
 
     lastName.addEventListener("input", () => {
         errorLastName.textContent = "";
-        iconError2.style.display = "none";
-        iconError3.style.top = "21.3em";
-        iconError4.style.top = "27em";
+        // iconError2.style.display = "none";
+        // iconError3.style.top = "21.3em";
+        // iconError4.style.top = "27em";
         errorBorderLastName.style.borderColor = "";
     })
     if(lastName.value.trim() === ""){
         errorLastName.textContent = "Last Name cannot be empty";
-        iconError2.style.display = "block";
+        iconError.style.display = "block";
         errorBorderLastName.style.borderColor = "hsl(0, 100%, 74%)";
     }else{
         errorLastName.textContent = ""; 
-        iconError2.style.display = "none";
+        // iconError2.style.display = "none";
     }
 }
 
@@ -83,19 +85,19 @@ const validateEmail = () => {
 
     email.addEventListener("input", () => {
         errorEmail.textContent = "";
-        iconError3.style.display = "none";
-        iconError4.style.top = "26em";
+        // iconError3.style.display = "none";
+        // iconError4.style.top = "26em";
         errorBorderEmail.style.borderColor = "";
     });
 
     if(email.value.trim() === ""){
         errorEmail.textContent = "Email cannot be empty";
-        iconError3.style.display = "block";
+        // iconError3.style.display = "block";
         errorBorderEmail.style.borderColor = "hsl(0, 100%, 74%)";
     }else if(!emailPattern.test(email.value.trim())){
         errorEmail.textContent = "Looks like this is not an email";
-        iconError3.style.display = "block";
-        iconError4.style.top = "27.1em";
+        // iconError3.style.display = "block";
+        // iconError4.style.top = "27.1em";
         errorBorderEmail.style.borderColor = "hsl(0, 100%, 74%)";
     }else{
         errorEmail.textContent = "";

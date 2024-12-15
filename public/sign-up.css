@@ -8,8 +8,11 @@
 }
 
 body{
+    max-width: 1400px;
+    width: 100%;
+    margin: 6em auto;
     background: hsl(0, 100%, 74%);
-    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+    background-image: url(./images/bg-intro-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,15 +23,14 @@ body{
 .contents{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 4em auto;
-    gap: 0 50px;
+    gap: 0 30px;
 }
 
 .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 77px;
+    padding: 0 30px;
     color: white;
 }
 .wrapper h1{
@@ -42,8 +44,7 @@ body{
 }
 
 .container{
-    padding-right: 90px;
-    max-width: 700px;
+    max-width: 600px;
     width: 100%;
 }
 .container .trial{
@@ -66,7 +67,6 @@ body{
 
 form{
     background-color: white;
-    max-width: 500px;
     width: 100%;
     max-height: 550px;
     margin-right: 10em;
@@ -94,7 +94,7 @@ form span{
     outline: none;
 }
 .form-group input:focus{
-    border: 1px solid hsl(249, 10%, 26%);
+    border: 2px solid hsl(250, 3%, 56%);
 }
 .form-group #submit{
     background: hsl(154, 59%, 51%);
@@ -113,36 +113,21 @@ form p a{
     text-decoration: none;
 }
 
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .icon-error{
-    width: 1.5%;
-    flex-shrink: 0;
-}
-.icon-1{
     position: absolute;
-    top: 12.3em;
-    right: 9em;
+    right: 35px;
     display: none;
 }
-.icon-2{
-    position: absolute;
-    top: 18em;
-    right: 9em;
-    display: none;
-}
-.icon-3{
-    position: absolute;
-    top: 23.8em;
-    right: 9em;
-    display: none;
-}
-.icon-4{
-    position: absolute;
-    top: 29.7em;
-    right: 9em;
-    display: none;
-}  
 
 .attribution { 
+    margin-top: 20px;
     text-align: center;
     font-size: 11px;
 }
@@ -152,211 +137,76 @@ form p a{
 
 /* Responsive Design */
 
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1250px) {
+    body{
+        max-width: 1000px;
+        margin: 6em auto;
+    }
+    .wrapper h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .wrapper p{
+        font-size: 16px;
+    }
     .icon-error{
-        width: 2.5%;
+        right: 20px;
     }
-    .icon-1{
-        top: 12em;
-        right: 9em;
-        
-    }
-    .icon-2{
-        top: 17.7em;
-        right: 9em;
-        
-    }
-    .icon-3{
-        top: 23.5em;
-        right: 9em;
-        
-    }
-    .icon-4{
-        top: 29.3em;
-        right: 9em;
-        
-    } 
 }
-@media screen and (max-width: 845px) {
+
+@media screen and (max-width: 1016px) {
+    .wrapper h1{
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 877px) {
     .wrapper h1{
         font-size: 40px;
         line-height: 40px;
-        padding-bottom: 30px;
-    }
-    .wrapper p{
-        font-size: 15px;
-        line-height: 20px;
     }
 }
 
-@media screen and (max-width: 740px) {
-    main{
-        gap: 0 20px;
-    }
-    .wrapper h1{
-        font-size: 25px;
-        line-height: 23px;
-        padding-bottom: 20px;
-    }
-    .wrapper p{
-        font-size: 14px;
-        line-height: 16px;
-    }
-    .container{
-        max-width: 500px;
-    }
-}
-
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 855px) {
     body{
-        background-image: url(/intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+        max-width: 500px;
+        margin: 4em auto;
     }
-    main{
+    .contents{
         grid-template-columns: 1fr;
     }
     .wrapper{
-        padding: 0 10px;
-        color: white;
+        margin-bottom: 25px;
     }
-    .wrapper h1{
-        font-size: 47px;
-        text-align: center;
-        line-height: 45px;
-        padding-bottom: 30px;
-    }
+    .wrapper h1,
     .wrapper p{
-        font-size: 20px;
-        line-height: 27px;
         text-align: center;
     }
-    .container{
-        position: absolute;
-        top: 20em;
-        left: 40px;
-        max-width: 450px;
-        padding: 0 10px;
-    }
-    .container .trial{
-        padding: 0 10px;
-    }
-    .trial p{
-        font-size: 20px;
-        padding: 30px 40px;
-    }
-    form{
-        padding: 20px;
-    }
-    .terms{
-        font-size: 18px;
-    }
-    .icon-error{
-        width: 4%;
-        flex-shrink: 0;
-    }
-    .icon-1{
-        top: 10.25em;
-        right: 2.7em;
-        
-    }
-    .icon-2{
-        top: 16em;
-        right: 2.7em;
-        
-    }
-    .icon-3{
-        top: 21.9em;
-        right: 2.7em;
-        
-    }
-    .icon-4{
-        top: 27.6em;
-        right: 2.7em;
-        
-    }  
-     .attribution { 
-        position: absolute;
-        top: 90em;
-        left: 13em;
-    } 
 }
 
-@media screen and (max-width: 500px) {
-    .container{
-        left: 30px;
+@media screen and (max-width: 485px) {
+    body{
         max-width: 400px;
     }
-    .attribution { 
-        top: 90em;
-        left: 10em;
-    } 
-}
-
-@media screen and (max-width: 440px) {
     .container{
-        left: 0;
+        max-width: 400px;
     }
-    .attribution { 
-        top: 90em;
-        left: 5em;
-    } 
 }
 
-@media screen and (max-width: 376px) {
-    .wrapper{
-        padding: 0 30px;
-        color: white;
+@media screen and (max-width: 420px) {
+    body{
+        max-width: 350px;
+    }
+    .container{
+        max-width: 350px;
     }
     .wrapper h1{
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 35px;
     }
     .wrapper p{
-        font-size: 18px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .container{
-        top: 25em;
-        left: 1px;
-    }
-    .trial p{
-        font-size: 20px;
-        padding: 30px 40px;
-    }
-    .terms{
-        font-size: 16px;
-    }
-    .attribution { 
-        top: 98em;
-        left: 40px;
-    }
-}
-
-@media screen and (max-width: 325px) {
-    .form-group input{
-        overflow-x: hidden;
-    }
-    .icon-1{
-        top: 11.8em;
-        
-    }
-    .icon-2{
-        top: 17.7em;
-        
-    }
-    .icon-3{
-        top: 23.5em;
-        
-    }
-    .icon-4{
-        top: 29.3em;
-        
-    }  
-    .terms{
-        font-size: 13px;
-    }
-    .attribution { 
-        top: 100em;
-        left: 23px;
+        font-size: 15px;
+        line-height: 24px;
     }
 }
