@@ -126,6 +126,14 @@ form p a{
     display: none;
 }
 
+#success {
+    border: 3px solid green;
+}
+
+#failed {
+    border: 3px solid red;
+}
+
 .attribution { 
     margin-top: 20px;
     text-align: center;

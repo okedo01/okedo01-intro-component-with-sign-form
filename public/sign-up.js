@@ -162,6 +162,17 @@ const validateFirstName = () => {
         document.querySelector('.first-img').style.display = 'none';
         document.querySelector('.first').innerHTML = "";
     }
+
+    // firstName.addEventListener('keyup', event => {
+    //     if(namePattern.test(event.target.value)) {
+    //         console.log("passed");
+    //         contactForm.firstName.setAttribute('id', 'success');
+            
+    //     }else {
+    //         console.log("failed");
+    //         contactForm.firstName.setAttribute('id', 'failed');
+    //     }
+    // })
 }
 
 const validateLastName = () => {
