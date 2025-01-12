@@ -82,7 +82,6 @@ form span{
     padding-top: 5px;
 }
 .form-group input{
-    max-width: 500px;
     width: 100%; 
     padding: 15px;
     flex: 1;
@@ -113,16 +112,17 @@ form p a{
     text-decoration: none;
 }
 
-.error {
+/* .error {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-}
+} */
 
-.icon-error{
+.first-img, .last-img,
+.email-img, .password-img{
     position: absolute;
-    right: 35px;
+    right: 17.5em;
     display: none;
 }
 
