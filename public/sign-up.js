@@ -150,21 +150,23 @@ contactForm.addEventListener('submit', (e) => {
 
     let isValid = true;
     const validators = [
-        validateFirstName,
-        validateLastName,
-        validateEmail,
-        validatePassword
+        validateFirstName(),
+        validateLastName(),
+        validateEmail(),
+        validatePassword()
     ]
     
     validators.forEach(validate => {
-        if(!validate) {
+        if(validate) {
             isValid = false;
         }
-        // contactForm.reset();
+    //     // contactForm.reset();
     })
-    if(isValid) {
-        contactForm.reset();
-    }
+    if(isValid){
+                alert(`Message Sent!
+                        Thanks for completing the form. We'll be in touch soon!`);
+                        contactForm.reset();
+            }
 })
 
 const validateFirstName = () => {
