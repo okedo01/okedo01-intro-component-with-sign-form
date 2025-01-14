@@ -152,4 +152,7 @@ const clearErrors = () => {
     document.querySelectorAll('.error').forEach(error => {
         error.textContent = "";
     });
+    contactForm.querySelectorAll('input').forEach(input => {
+        input.removeAttribute('id'); 
+    });
 };

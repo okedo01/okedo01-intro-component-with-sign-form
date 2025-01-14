@@ -95,7 +95,7 @@ form span{
 .form-group input:focus{
     border: 2px solid hsl(250, 3%, 56%);
 }
-.form-group #submit{
+.form-group .submit{
     background: hsl(154, 59%, 51%);
     color: white;
     text-transform: uppercase;
@@ -133,9 +133,6 @@ form p a{
 #failed {
     border: 3px solid red;
 }
-/* #yellow {
-    border: 1px solid hsl(246, 25%, 77%);
-} */
 
 .attribution { 
     margin-top: 20px;
