@@ -145,28 +145,44 @@ const namePattern = /^[a-z0-9]{6,}$/;
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%&?*])[A-Za-z\d!@#$%&*?]{8,}$/;
 
+const validateForm = () => {
+    let isValid = true;
+    const validators = [
+        validateFirstName,
+        validateLastName,
+        validateEmail,
+        validatePassword
+    ]
+    // validators.forEach(validator => {
+    //     if(!validator) isValid = false;
+    // })
+        
+    //     if(isValid) {
+    //         alert("Message Sent! \n Thanks for completing the form. We'll be in touch soon!");
+    //             contactForm.reset();
+    //             clearErrors();
+    //     }else {
+    //         // alert("take your time");
+    //         contactForm.reset();
+    //         // clearErrors();
+    //     }
+
+    validators.forEach(validator => {
+        if (!validator()) isValid = false;
+    });
+
+    if (isValid) {
+        alert(`Message Sent!
+        Thanks for completing the form. We'll be in touch soon!`);
+        contactForm.reset(); 
+        clearErrors(); 
+    }
+}
+
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let isValid = true;
-    const validators = [
-        validateFirstName(),
-        validateLastName(),
-        validateEmail(),
-        validatePassword()
-    ]
-    
-    validators.forEach(validate => {
-        if(validate) {
-            isValid = false;
-        }
-    //     // contactForm.reset();
-    })
-    if(isValid){
-                alert(`Message Sent!
-                        Thanks for completing the form. We'll be in touch soon!`);
-                        contactForm.reset();
-            }
+    validateForm();
 })
 
 const validateFirstName = () => {
@@ -231,11 +247,9 @@ const validateEmail = () => {
 }
 contactForm.email.addEventListener('keyup', event => {
     if(emailPattern.test(event.target.value)) {
-        console.log("passed");
         contactForm.email.setAttribute('id', 'success');
         
     }else {
-        console.log("failed");
         contactForm.email.setAttribute('id', 'failed');
     }
 })
@@ -264,3 +278,9 @@ contactForm.password.addEventListener('keyup', event => {
         contactForm.password.setAttribute('id', 'failed');
     }
 })
+
+const clearErrors = () => {
+    document.querySelectorAll('.error').forEach(error => {
+        error.textContent = "";
+    });
+};

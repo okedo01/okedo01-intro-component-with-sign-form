@@ -133,6 +133,9 @@ form p a{
 #failed {
     border: 3px solid red;
 }
+/* #yellow {
+    border: 1px solid hsl(246, 25%, 77%);
+} */
 
 .attribution { 
     margin-top: 20px;

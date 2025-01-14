@@ -27,38 +27,43 @@
       <form>
           <div class="form-group">
             <label for="first"></label>
-              <input type="text" name="first" placeholder="First Name">
+            <input type="text" name="first" placeholder="First Name">
+            <div class="error">
               <img src="./images/icon-error.svg" alt="icon-error" class="first-img">
+              <span class="first" id="error-first-name"></span> 
+            </div>
           </div>
-          <span class="first" id="error-first-name"></span> 
           <br>
     
           <div class="form-group">
             <label for="last"></label>
-              <input type="text" name="last" placeholder="Last Name">
+            <input type="text" name="last" placeholder="Last Name">
+            <div class="error">
               <img src="./images/icon-error.svg" alt="icon-error" class="last-img">
+              <span class="last" id="error-first-name"></span>
+            </div>
           </div>
-          <span class="last" id="error-first-name"></span> 
           <br>
     
           <div class="form-group">
             <label for="email"></label>
+            <input type="text" id="email" placeholder="Email Address">
             <div class="error">
-              <input type="text" id="email" placeholder="Email Address">
               <img src="./images/icon-error.svg" alt="icon-error" class="email-img">
+              <span class="email" id="error-first-name"></span> 
             </div>
           </div>
-          <span class="email" id="error-first-name"></span> 
+          
             <br>
     
           <div class="form-group">
             <label for="password"></label>
+            <input type="password" id="password" placeholder="Password">
             <div class="error">
-              <input type="password" id="password" placeholder="Password">
               <img src="./images/icon-error.svg" alt="icon-error" class="password-img">
+              <span class="password" id="error-first-name"></span> 
             </div>
           </div>
-          <span class="password" id="error-first-name"></span> 
             <br>
     
           <div class="form-group submit">
