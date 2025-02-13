@@ -38,6 +38,9 @@ const validateFirstName = () => {
         return false;
     }else {
         document.querySelector('.first-img').style.display = 'none';
+        document.querySelector('.last-img').style.top = '32em';
+        document.querySelector('.email-img').style.top = '38em';
+        document.querySelector('.password-img').style.top = '43.8em';
         document.querySelector('.first').innerHTML = "";
         contactForm.first.setAttribute('id', 'success');
         return true;
@@ -64,6 +67,8 @@ const validateLastName = () => {
         return false;
     }else {
         document.querySelector('.last-img').style.display = 'none';
+        document.querySelector('.email-img').style.top = '36.7em';
+        document.querySelector('.password-img').style.top = '42.5em';
         document.querySelector('.last').innerHTML = "";
         contactForm.last.setAttribute('id', 'success');
         return true;
@@ -90,6 +95,7 @@ const validateEmail = () => {
         return false;
     }else {
         document.querySelector('.email-img').style.display = 'none';
+        document.querySelector('.password-img').style.top = '41.5em';
         document.querySelector('.email').innerHTML = "";
         contactForm.email.setAttribute('id', 'success');
         return true;

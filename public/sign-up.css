@@ -302,7 +302,7 @@ form p a{
 @media screen and (max-width: 670px) {
     .first-img, .last-img,
     .email-img, .password-img{
-        right: 8em;
+        right: 8.3em;
     }
 }
 
@@ -329,7 +329,7 @@ form p a{
     }
     .first-img, .last-img,
     .email-img, .password-img{
-        right: 5em;
+        right: 5.5em;
     }
     .first-img {
         top: 27.2em;
@@ -348,7 +348,7 @@ form p a{
 @media screen and (max-width: 450px) {
     .first-img, .last-img,
     .email-img, .password-img{
-        right: 4em;
+        right: 4.5em;
     }
 }
 
@@ -372,7 +372,21 @@ form p a{
     }
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 3em;
+    }
+} */
+
+@media screen and (max-width: 390px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 3.5em;
+    }
+}
+
+@media screen and (max-width: 375px) {
     .first-img, .last-img,
     .email-img, .password-img{
         right: 3em;
@@ -382,6 +396,6 @@ form p a{
 @media screen and (max-width: 360px) {
     .first-img, .last-img,
     .email-img, .password-img{
-        right: 1.5em;
+        right: 2.3em;
     }
 }
