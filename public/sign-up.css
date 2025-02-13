@@ -125,6 +125,18 @@ form p a{
     right: 17.5em;
     display: none;
 }
+.first-img {
+    top: 14em;
+}
+.last-img {
+    top: 20em;
+}
+.email-img {
+    top: 25.8em;
+}
+.password-img {
+    top: 31.8em;
+}
 
 #success {
     border: 3px solid green;
@@ -145,6 +157,27 @@ form p a{
 
 /* Responsive Design */
 
+@media screen and (max-width: 1400px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 8em;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 6em;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 5em;
+    }
+}
+
 @media screen and (max-width: 1250px) {
     body{
         max-width: 1000px;
@@ -157,8 +190,44 @@ form p a{
     .wrapper p{
         font-size: 16px;
     }
-    .icon-error{
-        right: 20px;
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 11em;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 10em;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 9em;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 8em;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 5.5em;
+    }
+}
+
+@media screen and (max-width: 1065px){
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 4.5em;
     }
 }
 
@@ -191,6 +260,64 @@ form p a{
     .wrapper p{
         text-align: center;
     }
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 14em;
+    }
+    .first-img {
+        top: 25.5em;
+    }
+    .last-img {
+        top: 31.5em;
+    }
+    .email-img {
+        top: 37.3em;
+    }
+    .password-img {
+        top: 43.3em;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 13em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 12em;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 10.5em;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 8em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 5.7em;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 4em;
+    }
 }
 
 @media screen and (max-width: 485px) {
@@ -199,6 +326,29 @@ form p a{
     }
     .container{
         max-width: 400px;
+    }
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 5em;
+    }
+    .first-img {
+        top: 27.2em;
+    }
+    .last-img {
+        top: 33.1em;
+    }
+    .email-img {
+        top: 39em;
+    }
+    .password-img {
+        top: 45em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 4em;
     }
 }
 
@@ -216,5 +366,22 @@ form p a{
     .wrapper p{
         font-size: 15px;
         line-height: 24px;
+    }
+    form{
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 3em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .first-img, .last-img,
+    .email-img, .password-img{
+        right: 1.5em;
     }
 }
