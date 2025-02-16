@@ -1,5 +1,5 @@
 const contactForm = document.querySelector('form');
-const namePattern = /^[a-z0-9]{6,}$/;
+const namePattern = /^[A-Za-z0-9]{6,}$/;
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%&?*])[A-Za-z\d!@#$%&*?]{8,}$/;
 
@@ -46,7 +46,7 @@ contactForm.first.addEventListener('keyup', event => {
         contactForm.first.setAttribute('id', 'success');
         document.querySelector('.first-img').style.display = 'none';
         document.querySelector('.first').innerHTML = "";
-        
+
         if(window.innerWidth < 485) {
             document.querySelector('.last-img').style.top = '32em';
             document.querySelector('.email-img').style.top = '38em';

@@ -102,6 +102,10 @@ form span{
     cursor: pointer;
 }
 
+.form-group .submit:hover{
+    background: hsl(154, 55%, 68%); 
+}
+
 .terms{
     color: hsl(246, 25%, 77%);
     font-size: 12px;
@@ -111,13 +115,6 @@ form p a{
     color: hsl(0, 100%, 74%);
     text-decoration: none;
 }
-
-/* .error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-} */
 
 .first-img, .last-img,
 .email-img, .password-img{
@@ -139,7 +136,7 @@ form p a{
 }
 
 #success {
-    border: 3px solid green;
+    border: 3px solid hsl(246, 25%, 77%);
 }
 
 #failed {
@@ -355,29 +352,26 @@ form p a{
 @media screen and (max-width: 420px) {
     body{
         max-width: 350px;
+        background-image: url(./images/bg-intro-mobile.png);
     }
     .container{
         max-width: 350px;
     }
+    .wrapper{
+        padding: 0 30px;
+    }
     .wrapper h1{
-        font-size: 30px;
+        font-size: 35px;
         line-height: 35px;
     }
     .wrapper p{
-        font-size: 15px;
+        font-size: 18px;
         line-height: 24px;
     }
     form{
         padding: 40px 20px;
     }
 }
-
-/* @media screen and (max-width: 400px) {
-    .first-img, .last-img,
-    .email-img, .password-img{
-        right: 3em;
-    }
-} */
 
 @media screen and (max-width: 390px) {
     .first-img, .last-img,
