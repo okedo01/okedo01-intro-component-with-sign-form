@@ -126,7 +126,7 @@ form p a{
     top: 14em;
 }
 .last-img {
-    top: 20em;
+    top: 19.9em;
 }
 .email-img {
     top: 25.8em;
@@ -370,6 +370,18 @@ form p a{
     }
     form{
         padding: 40px 20px;
+    }
+    .first-img {
+        top: 28.5em;
+    }
+    .last-img {
+        top: 34.45em;
+    }
+    .email-img {
+        top: 40.35em;
+    }
+    .password-img {
+        top: 46.35em;
     }
 }
 
