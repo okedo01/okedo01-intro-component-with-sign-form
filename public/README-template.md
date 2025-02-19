@@ -18,8 +18,6 @@ Users should be able to:
 ![Desktop-design](./images/Desktop-design%20(2).png)
 ![Mobile-design](./images/Mobile-design%20(2).png)
 
-### Links
-
 - Solution URL: [solution URL](https://github.com/okedo01/okedo01-intro-component-with-sign-form)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
